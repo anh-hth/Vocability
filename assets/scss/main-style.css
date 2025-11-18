@@ -172,4 +172,29 @@
 
 /*--------------------------------------------------------------
 # /Conjugation Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+.main {
+  position: relative;
+}
+.main::after {
+  content: "";
+  background: url("../img/bg-footer.svg") no-repeat 100%;
+  position: absolute;
+  z-index: 2;
+  width: 350px;
+  height: 350px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.main .section {
+  position: relative;
+  z-index: 2;
+}
+
+/*--------------------------------------------------------------
+# /Footer Section
 --------------------------------------------------------------*//*# sourceMappingURL=main-style.css.map */

@@ -244,15 +244,18 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 80px;
   margin-right: 8px;
 }
-
+.scrolled .header .logo img { 
+  max-height: 50px;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
 .header .logo h1 {
   font-size: 30px;
-  margin: 0;
   font-weight: 300;
   color: var(--heading-color);
+  display: none;
 }
 
 .header .btn-getstarted,
@@ -291,6 +294,7 @@ h6 {
 .scrolled .header {
   border-color: var(--contrast-color);
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
 /*--------------------------------------------------------------
@@ -782,7 +786,6 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
   padding: 60px 0;
   scroll-margin-top: 100px;
   overflow: clip;
