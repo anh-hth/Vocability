@@ -194,6 +194,9 @@
   position: relative;
   z-index: 2;
 }
+.main .section.hero {
+  z-index: 3;
+}
 
 /*--------------------------------------------------------------
 # /Footer Section
