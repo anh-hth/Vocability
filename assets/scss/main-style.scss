@@ -41,19 +41,34 @@
                     display: block;
                     font-size: 0;
                 }
-                &[data-value="us"] {
+                &[data-value="en"] {
                     span {
-                        background: url("../img/country/us.png") no-repeat 100% center/100%;
-                    }
-                }
-                &[data-value="gb"] {
-                    span {
-                        background: url("../img/country/gb.png") no-repeat 100% center/100%;
+                        background: url("../img/country/en.png") no-repeat 100% center/100%;
                     }
                 }
                 &[data-value="fr"] {
                     span {
                         background: url("../img/country/fr.png") no-repeat 100% center/100%;
+                    }
+                }
+                &[data-value="es"] {
+                    span {
+                        background: url("../img/country/es.png") no-repeat 100% center/100%;
+                    }
+                }
+                &[data-value="de"] {
+                    span {
+                        background: url("../img/country/de.png") no-repeat 100% center/100%;
+                    }
+                }
+                &[data-value="it"] {
+                    span {
+                        background: url("../img/country/it.png") no-repeat 100% center/100%;
+                    }
+                }
+                &[data-value="pt"] {
+                    span {
+                        background: url("../img/country/pt.png") no-repeat 100% center/100%;
                     }
                 }
             }

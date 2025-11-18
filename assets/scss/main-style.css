@@ -44,14 +44,23 @@
   display: block;
   font-size: 0;
 }
-.search-wrapper .quick-search .select-language-container .select-toggle[data-value=us] span {
-  background: url("../img/country/us.png") no-repeat 100% center/100%;
-}
-.search-wrapper .quick-search .select-language-container .select-toggle[data-value=gb] span {
-  background: url("../img/country/gb.png") no-repeat 100% center/100%;
+.search-wrapper .quick-search .select-language-container .select-toggle[data-value=en] span {
+  background: url("../img/country/en.png") no-repeat 100% center/100%;
 }
 .search-wrapper .quick-search .select-language-container .select-toggle[data-value=fr] span {
   background: url("../img/country/fr.png") no-repeat 100% center/100%;
+}
+.search-wrapper .quick-search .select-language-container .select-toggle[data-value=es] span {
+  background: url("../img/country/es.png") no-repeat 100% center/100%;
+}
+.search-wrapper .quick-search .select-language-container .select-toggle[data-value=de] span {
+  background: url("../img/country/de.png") no-repeat 100% center/100%;
+}
+.search-wrapper .quick-search .select-language-container .select-toggle[data-value=it] span {
+  background: url("../img/country/it.png") no-repeat 100% center/100%;
+}
+.search-wrapper .quick-search .select-language-container .select-toggle[data-value=pt] span {
+  background: url("../img/country/pt.png") no-repeat 100% center/100%;
 }
 .search-wrapper .quick-search .select-language-list {
   display: none; /* Hidden by default */
