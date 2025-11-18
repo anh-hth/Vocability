@@ -75,11 +75,29 @@
         </div>
         <div class="search-wrapper text-center" data-aos="zoom-out" data-aos-delay="100">
           <form action="/search" method="get" class="quick-search" role="search">
-            <select id="#select-language" class="form-select border-0 focus:ring-transparent collection-options english" aria-label="Country">
-              <option value="English" selected><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
-              <option value="English"><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
-              <option value="English"><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
-            </select>
+            <div class="select-language-container">
+                <a href="javascript:void(0)" class="select-toggle" data-value="gb" id="select-button">
+                  <span>
+                    Select Country
+                  </span>
+                  <img src="assets/img/arrow-down.svg" alt="" class="">
+                  </a>
+                <ul class="select-language-list" id="select-language-list" style="display: none;">
+                    <li data-value="us">
+                        <img src="assets/img/country/us.png" alt="" class="flag-icon">
+                        American
+                    </li>
+                    <li data-value="gb">
+                        <img src="assets/img/country/gb.png" alt="" class="flag-icon">
+                        British
+                    </li>
+                    <li data-value="fr">
+                        <img src="assets/img/country/fr.png" alt="" class="flag-icon">
+                        French
+                    </li>
+                </ul>
+                <input type="hidden" name="country" id="language-input">
+            </div>
             
             <div class="search-input-group w-full relative">
               <input type="text" name="q" value="" autocomplete="off" class="border-0 bg-transparent focus:ring-transparent p-0 w-full text-base text-foreground" required="" data-placeholder="Search words or vocabulary lists from books, exams or textbooks" placeholder="Search words or vocabulary lists from books, exams or textbooks">

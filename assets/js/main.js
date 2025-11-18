@@ -215,4 +215,32 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+ 
+  const selectButton = document.getElementById('select-button');
+  const countryList = document.getElementById('select-language-list');
+  const countryInput = document.getElementById('language-input');
+
+  selectButton.addEventListener('click', function() {
+      countryList.style.display = countryList.style.display === 'none' ? 'block' : 'none';
+  });
+
+  countryList.addEventListener('click', function(event) {
+      const selectedItem = event.target.closest('li'); 
+      if (selectedItem) {
+          const selectedValue = selectedItem.getAttribute('data-value');
+          const selectedText = selectedItem.textContent.trim();
+          const selectedFlagClass = selectedValue;
+
+          countryInput.value = selectedValue;
+          selectButton.setAttribute('data-value', selectedValue);
+          countryList.style.display = 'none';
+      }
+  });
+
+  document.addEventListener('click', function(event) {
+      if (!selectButton.contains(event.target) && !countryList.contains(event.target)) {
+          countryList.style.display = 'none';
+      }
+  });
+
 })();
