@@ -1,0 +1,111 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.search-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    .quick-search {
+        display: flex;
+        align-items: center;
+        border: 2px solid #5AA9E6;
+        border-radius: 64px;
+        overflow: hidden;
+        height: 64px;
+        max-width: 800px;
+        width: 100%;
+        background-color: #fff;
+        .form-select {
+            background-color: transparent;
+            width: 52px;
+            height: 32px;
+            &:focus, &:focus-visible, &:active {
+                border: none !important;
+                outline: none !important;
+            }
+        }
+        .search-input-group {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            input {
+                width: 100%;
+                height: 100%;
+                &:focus, &:focus-visible {
+                    border: none !important;
+                    outline: none !important;
+                }
+            }
+            button {
+                width: 64px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# /Hero Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Conjugation Section
+--------------------------------------------------------------*/
+
+.indicative-wrapper,
+.conditional-wrapper {
+  --background-hd-color: #5AA9E6;
+  --background-wp-color: #EFF7FD;
+  background: var(--background-wp-color);
+  border-radius: 8px;
+  border: 1px solid var(--background-hd-color);
+  overflow: hidden;
+  margin-bottom: 16px;
+    .mode {
+        color: #fff;
+        background-color: var(--background-hd-color);
+        padding: 8px 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .indicative-content,
+    .conditional-content {
+        padding: 16px;
+    }
+    .tempsheader {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--background-hd-color);
+    } 
+    .tempstab {
+        margin-bottom: 32px;
+    }
+
+    .tempscorps {
+        color: #333;
+        p {
+            margin-bottom: 0;
+        }
+        b {
+            color: #e50000;
+            font-weight: 400;
+        }
+    }
+}
+
+.conditional-wrapper {
+  --background-hd-color: #FF6392;
+  --background-wp-color: #FFF0F5;
+}
+
+.loudspeaker {
+  margin-bottom: 16px;
+}
+/*--------------------------------------------------------------
+# /Conjugation Section
+--------------------------------------------------------------*/

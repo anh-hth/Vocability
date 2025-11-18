@@ -24,7 +24,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+   <link href="assets/css/main.css" rel="stylesheet">
+   <link href="assets/scss/main-style.css" rel="stylesheet">
+  
 
   <!-- =======================================================
   * Template Name: OnePage
@@ -67,28 +69,26 @@
     <section id="hero" class="hero section">
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-out">
-          <div class="col-xl-7 col-lg-9 text-center">
-            <h1 style="color: #5AA9E6;">Look up <span style="color: #FF6392;">a word,</span><span style="color: #FFE45E;"> learn it</span> forever.</h1>
+          <div class="col-xl-12 col-lg-12">
+            <h1>Look up <span style="color: #FF6392;">a word,</span><span style="color: #FFE45E;"> learn it</span> forever.</h1>
           </div>
         </div>
-        <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
-          <quick-search class="quick-search">
-            <form action="/search" method="get" class="m-0 flex bg-background pl-5 py-3 rounded-full items-center relative border border-neutral-50" role="search">
-                <select id="#select-language" class="form-select border-0 focus:ring-transparent collection-options english" aria-label="Country">
-                  <option value="English" selected><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
-                  <option value="English"><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
-                  <option value="English"><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
-                </select>
-              
-              <div class="search-input-group w-full relative">
-                <input type="text" name="q" value="" autocomplete="off" class="border-0 bg-transparent focus:ring-transparent p-0 w-full text-base text-foreground" required="" data-placeholder="Search words or vocabulary lists from books, exams or textbooks" placeholder="Search words or vocabulary lists from books, exams or textbooks">
-                <input type="hidden" name="type" value="product">
-                <button type="submit" aria-label="search" class="search-button btn rounded-l-0 right-0 flex items-center justify-center text-foreground rounded-tr-full rounded-br-full absolute   bg-[var(--color-search)] text-white">
-                  <i class="icon icon-search"></i>
-                </button>
-              </div>
-            </form>
-          </quick-search>
+        <div class="search-wrapper text-center" data-aos="zoom-out" data-aos-delay="100">
+          <form action="/search" method="get" class="quick-search" role="search">
+            <select id="#select-language" class="form-select border-0 focus:ring-transparent collection-options english" aria-label="Country">
+              <option value="English" selected><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
+              <option value="English"><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
+              <option value="English"><img src="assets/img/country/gb.png" alt="" class=""><span>English</span></option>
+            </select>
+            
+            <div class="search-input-group w-full relative">
+              <input type="text" name="q" value="" autocomplete="off" class="border-0 bg-transparent focus:ring-transparent p-0 w-full text-base text-foreground" required="" data-placeholder="Search words or vocabulary lists from books, exams or textbooks" placeholder="Search words or vocabulary lists from books, exams or textbooks">
+              <input type="hidden" name="type" value="product">
+              <button type="submit" aria-label="search" class="search-buttonull text-white border-0 bg-transparent">
+                <img src="/assets/img/search.svg" alt="Icon search">
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 

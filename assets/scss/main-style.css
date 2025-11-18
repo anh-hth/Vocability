@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.search-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+.search-wrapper .quick-search {
+  display: flex;
+  align-items: center;
+  border: 2px solid #5AA9E6;
+  border-radius: 64px;
+  overflow: hidden;
+  height: 64px;
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+}
+.search-wrapper .quick-search .form-select {
+  background-color: transparent;
+  width: 52px;
+  height: 32px;
+}
+.search-wrapper .quick-search .form-select:focus, .search-wrapper .quick-search .form-select:focus-visible, .search-wrapper .quick-search .form-select:active {
+  border: none !important;
+  outline: none !important;
+}
+.search-wrapper .quick-search .search-input-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.search-wrapper .quick-search .search-input-group input {
+  width: 100%;
+  height: 100%;
+}
+.search-wrapper .quick-search .search-input-group input:focus, .search-wrapper .quick-search .search-input-group input:focus-visible {
+  border: none !important;
+  outline: none !important;
+}
+.search-wrapper .quick-search .search-input-group button {
+  width: 64px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------------
+# /Hero Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Conjugation Section
+--------------------------------------------------------------*/
+.indicative-wrapper,
+.conditional-wrapper {
+  --background-hd-color: #5AA9E6;
+  --background-wp-color: #EFF7FD;
+  background: var(--background-wp-color);
+  border-radius: 8px;
+  border: 1px solid var(--background-hd-color);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.indicative-wrapper .mode,
+.conditional-wrapper .mode {
+  color: #fff;
+  background-color: var(--background-hd-color);
+  padding: 8px 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.indicative-wrapper .indicative-content,
+.indicative-wrapper .conditional-content,
+.conditional-wrapper .indicative-content,
+.conditional-wrapper .conditional-content {
+  padding: 16px;
+}
+.indicative-wrapper .tempsheader,
+.conditional-wrapper .tempsheader {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--background-hd-color);
+}
+.indicative-wrapper .tempstab,
+.conditional-wrapper .tempstab {
+  margin-bottom: 32px;
+}
+.indicative-wrapper .tempscorps,
+.conditional-wrapper .tempscorps {
+  color: #333;
+}
+.indicative-wrapper .tempscorps p,
+.conditional-wrapper .tempscorps p {
+  margin-bottom: 0;
+}
+.indicative-wrapper .tempscorps b,
+.conditional-wrapper .tempscorps b {
+  color: #e50000;
+  font-weight: 400;
+}
+
+.conditional-wrapper {
+  --background-hd-color: #FF6392;
+  --background-wp-color: #FFF0F5;
+}
+
+.loudspeaker {
+  margin-bottom: 16px;
+}
+
+/*--------------------------------------------------------------
+# /Conjugation Section
+--------------------------------------------------------------*//*# sourceMappingURL=main-style.css.map */

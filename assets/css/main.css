@@ -821,7 +821,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: 350px;
   position: relative;
   display: flex;
   align-items: center;
@@ -863,6 +863,7 @@ section,
   font-size: 56px;
   font-weight: 700;
   line-height: 72px;
+  color: #fff;
 }
 
 .hero p {
@@ -948,61 +949,4 @@ section,
   .hero .icon-box:hover .title a {
     color: var(--accent-color);
   }
-}
-
-.indicative-wrapper,
-.conditional-wrapper {
-  --background-hd-color: #5AA9E6;
-  --background-wp-color: #EFF7FD;
-  background: var(--background-wp-color);
-  border-radius: 8px;
-  border: 1px solid var(--background-hd-color);
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-
-.indicative-wrapper .mode,
-.conditional-wrapper .mode {
-  color: #fff;
-  background-color: var(--background-hd-color);
-  padding: 8px 10px;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.indicative-content,
-.conditional-content {
-  padding: 16px;
-}
-
-.tempsheader {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--background-hd-color);
-} 
-
-.tempstab {
-  margin-bottom: 32px;
-}
-
-.tempscorps {
-  color: #333;
-}
-
-.tempscorps p {
-  margin-bottom: 0;
-}
-
-.tempscorps b {
-  color: #e50000;
-  font-weight: 400;
-}
-
-.conditional-wrapper {
-  --background-hd-color: #FF6392;
-  --background-wp-color: #FFF0F5;
-}
-
-.loudspeaker {
-  margin-bottom: 16px;
 }
